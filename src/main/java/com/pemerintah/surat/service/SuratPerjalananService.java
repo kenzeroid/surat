@@ -3,8 +3,6 @@ package com.pemerintah.surat.service;
 import com.pemerintah.surat.model.ExportJasper;
 import com.pemerintah.surat.model.SuratPerjalananModel;
 import net.sf.jasperreports.engine.*;
-import org.jcp.xml.dsig.internal.dom.Utils;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -13,26 +11,27 @@ import org.springframework.util.ResourceUtils;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
-import java.io.*;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.stream.Collectors;
 
 @Service
 public class SuratPerjalananService implements SuratPerjalanan{
     public ResponseEntity<?> getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalanan) throws JRException, IOException, ParseException {
 
         suratPerjalananData(suratPerjalanan);
-        ClassLoader classLoader = Utils.class.getClassLoader();
 
 //        File file = ResourceUtils.getFile("classpath:SuratPerjalananDinas.jrxml");
 //        File logo = ResourceUtils.getFile("classpath:img.png");
+//
+        InputStream image = getClass().getClassLoader().getResourceAsStream("img.png");
+        assert image != null;
+        BufferedImage logo = ImageIO.read(image);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(getClass().getClassLoader().getResourceAsStream("SuratPerjalananDinas.jrxml"));
         Map<String, Object> parameters = new HashMap<>();
@@ -54,7 +53,7 @@ public class SuratPerjalananService implements SuratPerjalanan{
         parameters.put("Ditetapkan", suratPerjalanan.getDitetapkan());
         parameters.put("TanggalSurat", suratPerjalanan.getTanggalSurat());
         parameters.put("Maksud", suratPerjalanan.getMaksud());
-        parameters.put("Logo", "");
+        parameters.put("Logo", logo);
         //Fill Jasper report
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, new JREmptyDataSource());
         //Export report
