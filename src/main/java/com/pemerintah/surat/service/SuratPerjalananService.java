@@ -3,32 +3,38 @@ package com.pemerintah.surat.service;
 import com.pemerintah.surat.model.ExportJasper;
 import com.pemerintah.surat.model.SuratPerjalananModel;
 import net.sf.jasperreports.engine.*;
-import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
-import net.sf.jasperreports.engine.export.ooxml.JRDocxExporter;
-import net.sf.jasperreports.export.SimpleExporterInput;
-import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
+import org.jcp.xml.dsig.internal.dom.Utils;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
+import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 @Service
 public class SuratPerjalananService implements SuratPerjalanan{
     public ResponseEntity<?> getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalanan) throws JRException, IOException, ParseException {
 
         suratPerjalananData(suratPerjalanan);
+        ClassLoader classLoader = Utils.class.getClassLoader();
 
-        File file = ResourceUtils.getFile("classpath:SuratPerjalananDinas.jrxml");
-        File logo = ResourceUtils.getFile("classpath:img.png");
-        JasperReport jasperReport = JasperCompileManager.compileReport(file.getPath());
+//        File file = ResourceUtils.getFile("classpath:SuratPerjalananDinas.jrxml");
+//        File logo = ResourceUtils.getFile("classpath:img.png");
+
+        JasperReport jasperReport = JasperCompileManager.compileReport(getClass().getClassLoader().getResourceAsStream("SuratPerjalananDinas.jrxml"));
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("Nomor", suratPerjalanan.getNomor());
         parameters.put("Wenang", suratPerjalanan.getWenang());
@@ -48,7 +54,7 @@ public class SuratPerjalananService implements SuratPerjalanan{
         parameters.put("Ditetapkan", suratPerjalanan.getDitetapkan());
         parameters.put("TanggalSurat", suratPerjalanan.getTanggalSurat());
         parameters.put("Maksud", suratPerjalanan.getMaksud());
-        parameters.put("Logo", logo.getPath());
+        parameters.put("Logo", "");
         //Fill Jasper report
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, new JREmptyDataSource());
         //Export report
