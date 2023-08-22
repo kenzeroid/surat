@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter_Landscape" pageWidth="935" pageHeight="595" orientation="Landscape" columnWidth="935" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="01ff6d01-4e6d-44ad-a0ea-6184713216f3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="Nomor" class="java.lang.String"/>
+	<parameter name="Wenang" class="java.lang.String"/>
+	<parameter name="Nama" class="java.lang.String"/>
+	<parameter name="Golongan" class="java.lang.String"/>
+	<parameter name="Jabatan" class="java.lang.String"/>
+	<parameter name="Tingkat" class="java.lang.String"/>
+	<parameter name="Tujuan" class="java.lang.String"/>
+	<parameter name="Kendaraan" class="java.lang.String"/>
+	<parameter name="TempatBerangkat" class="java.lang.String"/>
+	<parameter name="TempatTujuan" class="java.lang.String"/>
+	<parameter name="LamaPerjalanan" class="java.lang.String"/>
+	<parameter name="TanggalBerangkat" class="java.lang.String"/>
+	<parameter name="TanggalKembali" class="java.lang.String"/>
+	<parameter name="Instansi" class="java.lang.String"/>
+	<parameter name="MataAnggaran" class="java.lang.String"/>
+	<parameter name="Penetapan" class="java.lang.String"/>
+	<parameter name="TanggalSurat" class="java.lang.String"/>
+	<parameter name="Ditetapkan" class="java.lang.String"/>
+	<parameter name="Maksud" class="java.lang.String"/>
+	<parameter name="Logo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="595">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="10" width="469" height="20" uuid="e58d5b33-7efa-4936-9df5-e78f8c2a88d3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PEMERINTAH PROVINSI KALIMANTAN TIMUR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="468" y="0" width="1" height="595" uuid="06e18899-f210-44ef-a001-aaf0a17aeabc"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="24" width="469" height="20" uuid="d5c1e7bc-ebe3-4a41-a3fd-5a5862e7482b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DINAS PETERNAKAN DAN KESEHATAN HEWAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="469" height="20" uuid="a8eb10fd-bec3-4eb7-922d-57d74ed6534d"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[Jalan Bhayangkara No.54 Telepon (0541) 743921 – 741642 Fax. 736228]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="69" width="468" height="1" uuid="974806c1-9ae2-49f5-96c4-d1c3c182e5e6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="4.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="53" width="469" height="14" uuid="30e903bb-8eff-4200-9559-8023903b736e"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[SAMARINDA 75121]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="84" width="469" height="20" uuid="d2dbb9cc-2bf8-4919-b523-8a0e3e864bc4"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="10" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[SURAT PERJALANAN DINAS (SPD)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="99" width="468" height="20" uuid="8f6fde95-a0ec-406a-9059-624f3649a8b9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nomor : "+$P{Nomor}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="140" width="468" height="1" uuid="f298c1a0-905a-462d-b5a6-4775068b04f7"/>
+			</line>
+			<line>
+				<reportElement x="220" y="140" width="1" height="455" uuid="1d7312c8-9004-4082-9fdb-f5aca25d0a5b"/>
+			</line>
+			<line>
+				<reportElement x="0" y="152" width="468" height="1" uuid="c57a9b9f-c518-4df8-80b7-3f7641141331"/>
+			</line>
+			<line>
+				<reportElement x="0" y="164" width="468" height="1" uuid="643d1053-392c-4b9c-9713-826cda807ce9"/>
+			</line>
+			<line>
+				<reportElement x="0" y="200" width="468" height="1" uuid="ee1f3fde-f627-4641-a47a-ea8d41ba4791"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="140" width="220" height="12" uuid="940901e5-ea78-4615-80cd-9033ef4f42bf">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pejabat berwenang yang memberi perintah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="152" width="220" height="12" uuid="0b7dfb53-3bd3-4576-8511-4961c93a800c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Nama Pegawai yang diperintah]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="140" width="247" height="12" uuid="df3b33da-f6f5-4e14-9ce8-90935e0eab79">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Wenang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="152" width="247" height="12" uuid="f880f613-74db-4cea-a172-bc089b7552e7">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8" isBold="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="165" width="220" height="12" uuid="470993b8-7858-4373-9c24-1ab63898306e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[a.   Pangkat dan Golongan menurut PGPS 1968]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="177" width="220" height="12" uuid="fe0f115d-01de-4c20-8254-c07bba0aaab9">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[b.   J a b a t a n]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="189" width="220" height="12" uuid="486e2ffe-4b7d-45fb-a38a-f716e1d0808b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[c.   Tingkat menurut peraturan perjalanan Dinas]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="165" width="247" height="12" uuid="92101823-6b1d-43de-a1f3-d1be88cdb573">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Golongan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="177" width="247" height="12" uuid="d47ed9dd-1277-4140-a3f5-e625443ee2cb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Jabatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="189" width="247" height="12" uuid="551ffbbe-2dd2-4108-b315-106a5fa0a5e6">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Tingkat}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="236" width="468" height="1" uuid="c5493944-9b83-4ecf-a61d-de6c6d3ce62a"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="200" width="220" height="36" uuid="e691a458-b9de-4146-b047-2c753b816821">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Maksud Perjalanan Dinas]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="249" width="468" height="1" uuid="3695fc23-7663-4f45-ad98-faccecdf2e91"/>
+			</line>
+			<line>
+				<reportElement x="0" y="273" width="468" height="1" uuid="6cd8a54d-84f5-4223-bfe8-a140bdeb33d0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="310" width="468" height="1" uuid="5a880f25-658b-45c3-a904-b6b7d945e817"/>
+			</line>
+			<line>
+				<reportElement x="0" y="322" width="468" height="1" uuid="e562ffeb-9ba6-42c9-86f1-1fe24e664004"/>
+			</line>
+			<line>
+				<reportElement x="0" y="358" width="468" height="1" uuid="17dd3c31-890e-4a80-b599-fedb2726ddbb"/>
+			</line>
+			<line>
+				<reportElement x="0" y="395" width="468" height="1" uuid="dc2f3b33-9170-4951-ba13-01a46702b315"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="237" width="220" height="12" uuid="9b8a183b-88e7-4840-8dde-e430a2adbb57">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Alat angkutan yang dipergunakan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="249" width="220" height="12" uuid="52099322-d54c-43f5-83ac-915010f1f763">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[a.   Tempat Berangkat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="261" width="220" height="12" uuid="7358c786-faad-4764-862f-74c1290f3f4c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[b.   Tempat Dituju]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="274" width="220" height="12" uuid="9fef7a63-7867-464e-872a-fcbaecaa9c1c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[a.   Lamanya Perjalanan Dinas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="286" width="220" height="12" uuid="39a7f753-f5ee-4696-add7-645aa7ce5780">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[b.   Tanggal berangkat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="298" width="220" height="12" uuid="dd191663-fc5e-4b73-a06a-e78256c04d9c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[c.   Tanggal harus kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="310" width="60" height="12" uuid="c2cf2178-3628-4ab8-adc7-2afd7dc773dc">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pengikut]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="383" width="220" height="12" uuid="799510fa-813b-44a4-98ff-e452ba5a5677">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[b.    Mata Anggaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="371" width="220" height="12" uuid="31f86245-ebe6-41c7-9950-77af97578737">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[a.    Instansi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="359" width="220" height="12" uuid="e40a109d-8d2d-4926-a17a-8a44dae91bbe">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pembebanan Anggaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="396" width="220" height="12" uuid="ee92fa57-b064-4c93-8b2d-8b39f544f377">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Keterangan Lain-Lain]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="408" width="468" height="1" uuid="a46639c3-7c40-4971-b092-1ad1c83b8d83"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="409" width="220" height="12" uuid="69e1e50f-fb55-41b3-8abf-fe2f4bf44a10">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[CATATAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="421" width="220" height="90" uuid="10d2d5a7-dfc5-4cbb-a4fb-193595ccac8a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[SPD ini harus diketahui tanggal tiba dan berangkat oleh pejabat setempat setelah sampai di tempat tujuan.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="310" width="160" height="12" uuid="e799ace6-9143-45ff-8b4a-bc1f7a5c4085">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<line>
+				<reportElement x="60" y="310" width="1" height="48" uuid="47d12cca-c545-4af7-a8a8-070de31426f2"/>
+			</line>
+			<staticText>
+				<reportElement x="221" y="310" width="60" height="12" uuid="bd68bd04-d97f-4afa-894a-5c855d3d3217">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[UMUR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="281" y="310" width="1" height="48" uuid="42071e8a-e64a-425c-a8db-dd98e1c8180c"/>
+			</line>
+			<staticText>
+				<reportElement x="282" y="310" width="186" height="12" uuid="e43bfc32-1fa3-4cba-a19b-452e7b5bb4ca">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Hubungan keluarga/keterangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="421" width="60" height="12" uuid="49c81270-3ef8-45fe-abb0-11624e9dbfbd">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ditetapkan di :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="433" width="60" height="12" uuid="659642b1-9b85-44c5-8087-6b5e2e652adb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="480" width="247" height="12" uuid="bc7121fc-bd7b-43a6-9adc-ad53f7b7bbb5">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
+			</staticText>
+			<line>
+				<reportElement x="469" y="140" width="468" height="1" uuid="e8879fe4-6e50-4113-a4d6-4d85c524d7ce"/>
+			</line>
+			<line>
+				<reportElement x="700" y="0" width="1" height="544" uuid="c9f62d97-67ae-42f9-8617-a452ffc0ad9c"/>
+			</line>
+			<line>
+				<reportElement x="469" y="230" width="468" height="1" uuid="b05d11c7-c139-4102-86dc-ced88a5d0e04"/>
+			</line>
+			<staticText>
+				<reportElement x="221" y="520" width="247" height="8" uuid="d87cc891-a758-4d54-8fc6-40e800877f36">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="528" width="247" height="8" uuid="92601fec-2670-459f-824d-b5e73060f931">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pembina Tingkat I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="536" width="247" height="8" uuid="b98f0b14-63f9-4501-aeba-d0cf121a4fcf">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="60" height="10" uuid="3579cf6c-521e-4c96-8009-650c3b7300f9">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Berangkat dari	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="10" width="60" height="10" uuid="71703189-6ac2-4c80-8cb3-a12057a4c587">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[(Tempat kedudukan)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="20" width="60" height="10" uuid="ae732ff0-0629-4585-bc94-fac81affffab">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="30" width="60" height="10" uuid="2eb80ffa-3b9b-4df6-aec0-ca3321ff5612">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ke	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="57" width="234" height="12" uuid="124da159-7b04-49f8-a05f-f413d7e1f1a3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="117" width="234" height="8" uuid="6bda461f-bcf2-4e02-ab4c-2e940d064ae5">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="125" width="234" height="8" uuid="6403de0b-3ed6-4af2-aab6-0194815f6f33">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pembina Tingkat I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="133" width="234" height="8" uuid="ede91ac2-e997-48fa-bff9-0bf98091b2e5">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="141" width="60" height="10" uuid="8d5a0bd0-7dc9-48ca-bb4d-6b404cd3b277">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Berangkat dari	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="151" width="60" height="10" uuid="3a7b0048-03dc-403a-a047-59bad6fa6800">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ke	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="161" width="60" height="10" uuid="960b1801-35d4-41c9-ac79-5a4d8bf06f22">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="171" width="60" height="10" uuid="9a5e4d04-9a12-4f66-95d8-2844db7aab9d">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="469" y="395" width="468" height="1" uuid="35b93c0d-73a0-4757-9fd9-26906caa797f"/>
+			</line>
+			<line>
+				<reportElement x="469" y="544" width="468" height="1" uuid="bb3cd2a1-5e42-40d6-a1cd-d7ced5532e75"/>
+			</line>
+			<line>
+				<reportElement x="469" y="310" width="468" height="1" uuid="0ead44f6-6c93-4c90-9768-238ac96164b5"/>
+			</line>
+			<staticText>
+				<reportElement x="701" y="230" width="60" height="10" uuid="b176162d-6d3e-4c08-98b3-c4b2c8208a31">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Berangkat dari	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="240" width="60" height="10" uuid="1d2ec79e-4e9e-4e2a-91e0-f53a60419aef">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ke	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="250" width="60" height="10" uuid="6994b38a-0f67-4939-b84c-a88964dfaf0f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="260" width="60" height="10" uuid="921c092d-4951-40a8-a08e-d28b74eb88d4">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="310" width="60" height="10" uuid="0a489286-cefe-4d19-8a95-9dcaf3b053ec">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Berangkat dari	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="320" width="60" height="10" uuid="2e1b7e23-dabf-421f-bb77-3aafced8e261">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Ke	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="330" width="60" height="10" uuid="0730c4b6-502e-436b-8983-b69509b8ca4e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="340" width="60" height="10" uuid="f02cd4e9-1a78-40f7-a083-bd5827aaa431">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="141" width="60" height="10" uuid="81e36c16-6be5-4db3-8236-701d2d37df8b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Tiba di	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="151" width="60" height="10" uuid="b3f847d9-777c-4fa0-a5b7-2efe85ac4748">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="161" width="60" height="10" uuid="be7a1301-5b0d-4076-9b7c-35f2b0078423">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="141" width="11" height="10" uuid="bcd9b94b-2ea8-48c2-a38d-b5de0ffc5737">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[II.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="230" width="60" height="10" uuid="e6549e31-18e9-4a16-9d8a-df19425e7be2">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Tiba di	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="240" width="60" height="10" uuid="9d5479e6-f315-40eb-b0b3-0bc2a46c0d4c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="250" width="60" height="10" uuid="22c36d23-7bb4-4037-b9b1-2b7ea62cf1a8">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="230" width="11" height="10" uuid="9e6684b7-4c79-40d8-8618-e1668101389b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[III.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="311" width="60" height="10" uuid="08237998-2202-4b4b-b455-733cd657c65b">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Tiba di	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="321" width="60" height="10" uuid="c681ca02-3caf-44c5-90bc-d3b8f6c6a0b6">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pada tanggal	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="331" width="60" height="10" uuid="04d432b4-fb5a-4226-9849-7f12fab8b267">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kepada	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="311" width="11" height="10" uuid="e3398d8c-f93d-4951-90b3-25c7912f9d46">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[IV.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="460" width="234" height="12" uuid="b01af75b-6ec4-451c-9c1a-735748179a5a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="520" width="234" height="8" uuid="c1455448-80c9-4592-ba3b-89e3855850cc">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="528" width="234" height="8" uuid="da4d8a09-a26e-4f49-8890-086847867a53">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pembina Tingkat I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="536" width="234" height="8" uuid="dc00a5b6-ef20-4f94-9fe8-c9c46ea25d67">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="460" width="231" height="12" uuid="6786dd68-34a7-4cea-b3dc-fc756c8193cb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="520" width="231" height="8" uuid="b5a0e785-df6b-4a62-8371-3f9079bb7db5">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="528" width="231" height="8" uuid="bccc6cac-ef16-4f09-94f0-f5817bbf1f43">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pembina Tingkat I]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="536" width="231" height="8" uuid="20229524-aa59-4cdc-bb2d-fdf9a851a97c">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="397" width="60" height="10" uuid="8018d427-5774-4312-ba6a-b30dc663ea5e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Tiba Kembali di :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="407" width="60" height="10" uuid="c69b271a-efdb-4510-b797-e140d07903d0">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[(tempat kedudukan)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="397" width="11" height="10" uuid="af1eb3fc-b334-45ba-b2cc-36fc06a21a76">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="440" width="91" height="10" uuid="90bea63d-eaa7-4500-8e36-4fcd96bdbc68">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pejabat yang memberi perintah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="397" width="235" height="36" uuid="e9ea5841-5a73-4da1-ae11-35c550699cc1">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Telah diperiksa dengan keterangan bahwa perjalanan tersebut diatas benar dilakukan atas perintahnya dan semata-mata untuk kepentingan jabatan dalam waktu yang sesingkat-singkatnya.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="469" y="555" width="468" height="1" uuid="08aabe70-f441-4a2f-a04a-99bc54fa2ecc"/>
+			</line>
+			<staticText>
+				<reportElement x="480" y="545" width="60" height="10" uuid="24d66139-daab-497d-96d3-b336ee989859">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Catatan lain-lain]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="545" width="11" height="10" uuid="d4c5e8ad-d8f3-42e6-b006-d7b5a924df20">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="556" width="60" height="10" uuid="b3bd1f50-8c26-40a2-9c03-c1deeb61c720">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isItalic="true" isUnderline="true"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[PERHATIAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="556" width="11" height="10" uuid="03f7b5e6-e63b-4b6a-bcd1-7f66d6b24589">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[V.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="566" width="455" height="28" uuid="9c0e0aeb-4a55-4180-b809-eba6bdfd4e7a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="6" isItalic="false" isUnderline="false"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[Pejabat yang berwenang menerbitkan SPD, pegawai yang melakukan perjalanan dinas, para pejabat yang mengesahkan tanggal berangkat/tiba, serta bendaharawan      bertanggung jawab berdasarkan peraturan-peraturan Keuangan Negara apabila negara menderita rugi akibat  kesalahan, kelalaian dan kealpaannya. ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="201" width="247" height="34" uuid="79e67e86-044a-46b4-89c6-ccda57cf28ff">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Maksud}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="237" width="247" height="12" uuid="a702c84a-0e69-4f2f-a820-533515ebb491">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Kendaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="249" width="247" height="12" uuid="ec65e108-8bc2-426e-ad5d-1133d18953e9">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="261" width="247" height="12" uuid="814daf52-9f64-457a-9edb-23eae3dac0f5">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="274" width="247" height="12" uuid="18e31f77-d377-443d-b106-6d9da448877e">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LamaPerjalanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="286" width="247" height="12" uuid="6da1d8f9-0527-4b00-ba9e-a4a84df78e27">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="298" width="247" height="12" uuid="5018ddd0-c25c-45d3-a925-415987205826">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalKembali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="421" width="187" height="12" uuid="214e4441-2ab4-4bfe-b9bc-5d0fff91a550">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Ditetapkan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="433" width="187" height="12" uuid="41fdf16a-b323-470f-9fa1-33c56ac0173f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalSurat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="396" width="159" height="12" uuid="67218efc-2ede-4838-b8e2-4bce15380e04">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Ditetapkan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="760" y="0" width="175" height="10" uuid="b47af38b-d1dd-40ec-b960-83a3bdb2bc7a">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="761" y="141" width="175" height="10" uuid="c2b8d760-099e-4516-af10-7333028124c6">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="761" y="151" width="175" height="10" uuid="2aaeb1da-a8df-4f6b-95e1-d2d78a43b8a7">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="761" y="161" width="175" height="10" uuid="849f2f29-4572-4bf8-b3c4-c81462d33b7d">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalKembali}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="151" width="159" height="10" uuid="c740fadf-1fac-49ec-92ce-03fa50b7d8d8">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="141" width="159" height="10" uuid="665fc884-8613-49ad-9382-0e02eadf6ee1">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="760" y="20" width="175" height="10" uuid="531e2776-8a6b-4bde-8c78-29d25c15bd54">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="760" y="30" width="175" height="10" uuid="327cf21c-4043-44ff-a51e-62f0d7e770fb">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="6"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="371" width="247" height="12" uuid="2cffe1d6-e035-43b1-9ee2-048bc887b1ac">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["a. "+$P{Instansi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="221" y="383" width="247" height="12" uuid="cdaa8b12-e1c3-4fc5-9f8e-b87ce9fe3ef3">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["b. "+$P{MataAnggaran}]]></textFieldExpression>
+			</textField>
+			<image onErrorType="Blank">
+				<reportElement x="30" y="0" width="51" height="71" uuid="62601fcb-f33d-4e5e-861f-4d518a8e92d9"/>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
