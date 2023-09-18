@@ -36,7 +36,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="12" isBold="true"/>
+					<font fontName="Courier" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PEMERINTAH PROVINSI KALIMANTAN TIMUR]]></text>
 			</staticText>
@@ -46,14 +46,14 @@
 			<staticText>
 				<reportElement x="0" y="24" width="469" height="20" uuid="d5c1e7bc-ebe3-4a41-a3fd-5a5862e7482b"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="12" isBold="true"/>
+					<font fontName="Courier" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[DINAS PETERNAKAN DAN KESEHATAN HEWAN]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="40" width="469" height="20" uuid="a8eb10fd-bec3-4eb7-922d-57d74ed6534d"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 				</textElement>
 				<text><![CDATA[Jalan Bhayangkara No.54 Telepon (0541) 743921 – 741642 Fax. 736228]]></text>
 			</staticText>
@@ -68,21 +68,21 @@
 			<staticText>
 				<reportElement x="0" y="53" width="469" height="14" uuid="30e903bb-8eff-4200-9559-8023903b736e"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="10"/>
+					<font fontName="Courier" size="10"/>
 				</textElement>
 				<text><![CDATA[SAMARINDA 75121]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="84" width="469" height="20" uuid="d2dbb9cc-2bf8-4919-b523-8a0e3e864bc4"/>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="10" isBold="true" isUnderline="true"/>
+					<font fontName="Courier" size="10" isBold="true" isUnderline="true"/>
 				</textElement>
 				<text><![CDATA[SURAT PERJALANAN DINAS (SPD)]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="0" y="99" width="468" height="20" uuid="8f6fde95-a0ec-406a-9059-624f3649a8b9"/>
 				<textElement textAlignment="Center">
-					<font fontName="Arial" size="10" isBold="true"/>
+					<font fontName="Courier" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Nomor : "+$P{Nomor}]]></textFieldExpression>
 			</textField>
@@ -107,7 +107,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pejabat berwenang yang memberi perintah]]></text>
@@ -118,7 +118,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Nama Pegawai yang diperintah]]></text>
@@ -128,7 +128,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Wenang}]]></textFieldExpression>
@@ -139,7 +139,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8" isBold="true"/>
+					<font fontName="Courier" size="8" isBold="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Nama}]]></textFieldExpression>
@@ -150,7 +150,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[a.   Pangkat dan Golongan menurut PGPS 1968]]></text>
@@ -160,7 +160,7 @@
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[b.   J a b a t a n]]></text>
@@ -171,7 +171,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[c.   Tingkat menurut peraturan perjalanan Dinas]]></text>
@@ -182,7 +182,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Golongan}]]></textFieldExpression>
@@ -193,7 +193,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Jabatan}]]></textFieldExpression>
@@ -204,7 +204,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Tingkat}]]></textFieldExpression>
@@ -218,7 +218,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Maksud Perjalanan Dinas]]></text>
@@ -247,7 +247,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Alat angkutan yang dipergunakan]]></text>
@@ -258,7 +258,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[a.   Tempat Berangkat]]></text>
@@ -268,7 +268,7 @@
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[b.   Tempat Dituju]]></text>
@@ -279,7 +279,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[a.   Lamanya Perjalanan Dinas]]></text>
@@ -289,7 +289,7 @@
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[b.   Tanggal berangkat]]></text>
@@ -300,7 +300,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[c.   Tanggal harus kembali]]></text>
@@ -311,7 +311,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pengikut]]></text>
@@ -322,7 +322,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[b.    Mata Anggaran]]></text>
@@ -333,7 +333,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[a.    Instansi]]></text>
@@ -343,7 +343,7 @@
 					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pembebanan Anggaran]]></text>
@@ -354,7 +354,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Keterangan Lain-Lain]]></text>
@@ -368,7 +368,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[CATATAN]]></text>
@@ -379,7 +379,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[SPD ini harus diketahui tanggal tiba dan berangkat oleh pejabat setempat setelah sampai di tempat tujuan.]]></text>
@@ -390,7 +390,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[NAMA]]></text>
@@ -404,7 +404,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[UMUR]]></text>
@@ -418,7 +418,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Arial" size="8" isUnderline="false"/>
+					<font fontName="Courier" size="8" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Hubungan keluarga/keterangan]]></text>
@@ -429,7 +429,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Ditetapkan di :]]></text>
@@ -440,7 +440,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Right" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal :]]></text>
@@ -451,7 +451,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
@@ -471,7 +471,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
@@ -482,7 +482,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pembina Tingkat I]]></text>
@@ -493,7 +493,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
@@ -504,7 +504,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Berangkat dari	:]]></text>
@@ -515,7 +515,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[(Tempat kedudukan)]]></text>
@@ -526,7 +526,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -537,7 +537,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Ke	:]]></text>
@@ -548,7 +548,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
@@ -559,7 +559,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
@@ -570,7 +570,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pembina Tingkat I]]></text>
@@ -581,7 +581,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
@@ -592,7 +592,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Berangkat dari	:]]></text>
@@ -603,7 +603,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Ke	:]]></text>
@@ -614,7 +614,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -625,7 +625,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -645,7 +645,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Berangkat dari	:]]></text>
@@ -656,7 +656,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Ke	:]]></text>
@@ -667,7 +667,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -678,7 +678,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -689,7 +689,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Berangkat dari	:]]></text>
@@ -700,7 +700,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Ke	:]]></text>
@@ -711,7 +711,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -722,7 +722,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -733,7 +733,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Tiba di	:]]></text>
@@ -744,7 +744,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -755,7 +755,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -766,7 +766,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[II.]]></text>
@@ -777,7 +777,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Tiba di	:]]></text>
@@ -788,7 +788,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -799,7 +799,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -810,7 +810,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[III.]]></text>
@@ -821,7 +821,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Tiba di	:]]></text>
@@ -832,7 +832,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pada tanggal	:]]></text>
@@ -843,7 +843,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kepada	:]]></text>
@@ -854,7 +854,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[IV.]]></text>
@@ -865,7 +865,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
@@ -876,7 +876,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
@@ -887,7 +887,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pembina Tingkat I]]></text>
@@ -898,7 +898,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
@@ -909,7 +909,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Kuasa Pengguna Anggaran]]></text>
@@ -920,7 +920,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="true"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[H. Fadli S., S.Sos, M.Si]]></text>
@@ -931,7 +931,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pembina Tingkat I]]></text>
@@ -942,7 +942,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isBold="true" isUnderline="false"/>
+					<font fontName="Courier" size="6" isBold="true" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[NIP. 19741207 199403 1 003]]></text>
@@ -953,7 +953,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Tiba Kembali di :]]></text>
@@ -964,7 +964,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[(tempat kedudukan)]]></text>
@@ -975,7 +975,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[V.]]></text>
@@ -986,7 +986,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pejabat yang memberi perintah]]></text>
@@ -997,7 +997,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Telah diperiksa dengan keterangan bahwa perjalanan tersebut diatas benar dilakukan atas perintahnya dan semata-mata untuk kepentingan jabatan dalam waktu yang sesingkat-singkatnya.]]></text>
@@ -1011,7 +1011,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Catatan lain-lain]]></text>
@@ -1022,7 +1022,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[V.]]></text>
@@ -1033,7 +1033,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isItalic="true" isUnderline="true"/>
+					<font fontName="Courier" size="6" isItalic="true" isUnderline="true"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[PERHATIAN]]></text>
@@ -1044,7 +1044,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isUnderline="false"/>
+					<font fontName="Courier" size="6" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[V.]]></text>
@@ -1055,7 +1055,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Top">
-					<font fontName="Arial" size="6" isItalic="false" isUnderline="false"/>
+					<font fontName="Courier" size="6" isItalic="false" isUnderline="false"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<text><![CDATA[Pejabat yang berwenang menerbitkan SPD, pegawai yang melakukan perjalanan dinas, para pejabat yang mengesahkan tanggal berangkat/tiba, serta bendaharawan      bertanggung jawab berdasarkan peraturan-peraturan Keuangan Negara apabila negara menderita rugi akibat  kesalahan, kelalaian dan kealpaannya. ]]></text>
@@ -1066,7 +1066,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Maksud}]]></textFieldExpression>
@@ -1077,7 +1077,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Kendaraan}]]></textFieldExpression>
@@ -1088,7 +1088,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
@@ -1099,7 +1099,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
@@ -1110,7 +1110,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{LamaPerjalanan}]]></textFieldExpression>
@@ -1121,7 +1121,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
@@ -1132,7 +1132,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalKembali}]]></textFieldExpression>
@@ -1143,7 +1143,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Ditetapkan}]]></textFieldExpression>
@@ -1154,7 +1154,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalSurat}]]></textFieldExpression>
@@ -1165,7 +1165,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{Ditetapkan}]]></textFieldExpression>
@@ -1176,7 +1176,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
@@ -1187,7 +1187,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
@@ -1198,7 +1198,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatBerangkat}]]></textFieldExpression>
@@ -1209,7 +1209,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalKembali}]]></textFieldExpression>
@@ -1220,7 +1220,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
@@ -1231,7 +1231,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
@@ -1242,7 +1242,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TanggalBerangkat}]]></textFieldExpression>
@@ -1253,7 +1253,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="6"/>
+					<font fontName="Courier" size="6"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{TempatTujuan}]]></textFieldExpression>
@@ -1264,7 +1264,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA["a. "+$P{Instansi}]]></textFieldExpression>
@@ -1275,7 +1275,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="8"/>
+					<font fontName="Courier" size="8"/>
 					<paragraph leftIndent="2"/>
 				</textElement>
 				<textFieldExpression><![CDATA["b. "+$P{MataAnggaran}]]></textFieldExpression>
