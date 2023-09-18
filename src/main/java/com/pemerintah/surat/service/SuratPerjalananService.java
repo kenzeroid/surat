@@ -8,12 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
-import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,16 +19,11 @@ import java.util.Map;
 
 @Service
 public class SuratPerjalananService implements SuratPerjalanan{
-    public ResponseEntity<?> getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalanan) throws JRException, IOException, ParseException {
+    public byte[] getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalanan) throws JRException, IOException, ParseException {
 
         suratPerjalananData(suratPerjalanan);
-
-//        File file = ResourceUtils.getFile("classpath:SuratPerjalananDinas.jrxml");
-//        File logo = ResourceUtils.getFile("classpath:img.png");
-//
-        InputStream image = getClass().getClassLoader().getResourceAsStream("img.png");
-        assert image != null;
-        BufferedImage logo = ImageIO.read(image);
+        File logo = ResourceUtils.getFile("classpath:img.png");
+//        InputStream image = getClass().getClassLoader().getResourceAsStream("img.png");
 
         JasperReport jasperReport = JasperCompileManager.compileReport(getClass().getClassLoader().getResourceAsStream("SuratPerjalananDinas.jrxml"));
         Map<String, Object> parameters = new HashMap<>();
@@ -53,7 +45,7 @@ public class SuratPerjalananService implements SuratPerjalanan{
         parameters.put("Ditetapkan", suratPerjalanan.getDitetapkan());
         parameters.put("TanggalSurat", suratPerjalanan.getTanggalSurat());
         parameters.put("Maksud", suratPerjalanan.getMaksud());
-        parameters.put("Logo", logo);
+        parameters.put("Logo", logo.getAbsolutePath());
         //Fill Jasper report
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, new JREmptyDataSource());
         //Export report
@@ -63,8 +55,8 @@ public class SuratPerjalananService implements SuratPerjalanan{
 //        httpServletResponse.setHeader("Content-Disposition", "attachment;filename=jasperfile.docx");
 //        httpServletResponse.setContentType("application/octet-stream");
 //        exporter.exportReport();
-        JasperExportManager.exportReportToPdfStream(jasperPrint,httpServletResponse.getOutputStream());
-        return new ResponseEntity<>(HttpStatus.OK);
+        return JasperExportManager.exportReportToPdf(jasperPrint);
+//        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     public ResponseEntity<?> exportJasperReport(HttpServletResponse response, ExportJasper exportJasper) throws JRException, IOException {

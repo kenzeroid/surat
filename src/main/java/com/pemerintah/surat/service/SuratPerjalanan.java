@@ -10,6 +10,6 @@ import java.io.IOException;
 import java.text.ParseException;
 
 public interface SuratPerjalanan {
-    ResponseEntity<?> getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalananModel) throws JRException, IOException, ParseException;
+    byte[] getSuratPerjalanan(HttpServletResponse httpServletResponse, SuratPerjalananModel suratPerjalananModel) throws JRException, IOException, ParseException;
     ResponseEntity<?> exportJasperReport(HttpServletResponse httpServletResponse, ExportJasper exportJasper) throws JRException, IOException;
 }
