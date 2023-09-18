@@ -50,17 +50,17 @@ public class SuratPerjalananController {
         }
     }
 
-    @GetMapping(value = "test")
-    public ResponseEntity<?> test(){
-        return ResponseEntity.ok(ResponseTest.builder()
-                        .errorSchema(ErrorSchema.builder()
-                                .errorStatus("201")
-                                .errorMessage(ErrorSchema.ErrorMessage.builder()
-                                        .errorInd("Tidak tersedia")
-                                        .errorEng("Unavailable")
-                                        .build())
-                                .build())
-                        .status("Berhasil")
-                .build());
-    }
+//    @GetMapping(value = "test")
+//    public ResponseEntity<?> test(){
+//        return ResponseEntity.ok(ResponseTest.builder()
+//                        .errorSchema(ErrorSchema.builder()
+//                                .errorStatus("201")
+//                                .errorMessage(ErrorSchema.ErrorMessage.builder()
+//                                        .errorInd("Tidak tersedia")
+//                                        .errorEng("Unavailable")
+//                                        .build())
+//                                .build())
+//                        .status("Berhasil")
+//                .build());
+//    }
 }
